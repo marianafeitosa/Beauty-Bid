@@ -1,0 +1,310 @@
+.leiloes-page {
+  min-height: 100vh;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+  color: #252525;
+}
+
+.navbar {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  background: white;
+
+  border-bottom:
+    1px solid #eeeeee;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+  color: #b95072;
+}
+
+.navbar-user {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+
+  font-size: 14px;
+}
+
+.navbar-user button {
+  border: 1px solid #b95072;
+  background: white;
+  color: #b95072;
+
+  padding: 9px 18px;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.hero {
+  padding:
+    70px
+    7%
+    75px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff1f5,
+      #f7dce6
+    );
+}
+
+.hero > div {
+  max-width: 720px;
+}
+
+.hero-tag {
+  display: inline-block;
+
+  background: white;
+  color: #b95072;
+
+  padding: 8px 15px;
+
+  border-radius: 50px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 46px;
+  line-height: 1.1;
+
+  margin:
+    20px
+    0
+    15px;
+}
+
+.hero h1 span {
+  color: #b95072;
+}
+
+.hero p {
+  color: #666;
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  max-width: 550px;
+}
+
+.leiloes-container {
+  width: 86%;
+  max-width: 1300px;
+
+  margin:
+    55px
+    auto
+    80px;
+}
+
+.titulo-area h2 {
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.titulo-area p {
+  margin-top: 0;
+  color: #777;
+}
+
+.leiloes-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(270px, 1fr)
+    );
+
+  gap: 25px;
+
+  margin-top: 30px;
+}
+
+.leilao-card {
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px
+    rgba(0, 0, 0, 0.06);
+
+  transition: 0.2s;
+}
+
+.leilao-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 14px 32px
+    rgba(0, 0, 0, 0.09);
+}
+
+.imagem-area {
+  position: relative;
+
+  height: 220px;
+
+  background: #f5f5f5;
+}
+
+.imagem-area img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.status {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  background: white;
+}
+
+.status.aberto {
+  color: #18864b;
+}
+
+.status.encerrado {
+  color: #777;
+}
+
+.status.cancelado {
+  color: #b32c2c;
+}
+
+.card-content {
+  padding: 22px;
+}
+
+.marca {
+  color: #b95072;
+
+  text-transform: uppercase;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.card-content h3 {
+  margin:
+    8px
+    0
+    10px;
+
+  font-size: 19px;
+}
+
+.descricao {
+  min-height: 42px;
+
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.preco {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.preco small {
+  color: #888;
+}
+
+.preco strong {
+  margin-top: 3px;
+
+  font-size: 25px;
+
+  color: #252525;
+}
+
+.encerramento {
+  margin:
+    12px
+    0
+    18px;
+
+  color: #777;
+
+  font-size: 12px;
+}
+
+.card-content button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #b95072;
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.card-content button:hover {
+  background: #a54263;
+}
+
+.loading {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+}
+
+.vazio {
+  margin-top: 30px;
+
+  padding: 50px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 18px;
+}
+
+.erro {
+  color: #a12b2b;
+}

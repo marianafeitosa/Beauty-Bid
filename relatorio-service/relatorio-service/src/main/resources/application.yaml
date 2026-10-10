@@ -1,0 +1,16 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: relatorio-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27020/relatorio_db
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

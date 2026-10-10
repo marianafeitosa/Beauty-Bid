@@ -1,0 +1,373 @@
+.admin-page {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 240px 1fr;
+
+  background: #f8f8fa;
+
+  font-family: Arial, sans-serif;
+  color: #242424;
+}
+
+.admin-sidebar {
+  min-height: 100vh;
+
+  position: sticky;
+  top: 0;
+
+  padding: 28px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  border-right:
+    1px solid #eeeeee;
+}
+
+.admin-logo {
+  margin-bottom: 8px;
+
+  color: #b95072;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.admin-label {
+  color: #aaaaaa;
+
+  font-size: 10px;
+  letter-spacing: 1.4px;
+}
+
+.admin-menu {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.admin-menu button,
+.admin-sair {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: transparent;
+
+  text-align: left;
+
+  color: #555;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.admin-menu button:hover,
+.admin-menu button.ativo {
+  background: #fff0f5;
+  color: #b95072;
+}
+
+.admin-sair {
+  color: #a43a3a;
+}
+
+.admin-content {
+  padding: 45px 5%;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+}
+
+.admin-header h1 {
+  margin: 0;
+
+  font-size: 30px;
+}
+
+.admin-header p {
+  margin-top: 7px;
+
+  color: #888;
+}
+
+.admin-user {
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.admin-user span {
+  color: #999;
+
+  font-size: 11px;
+}
+
+.admin-user strong {
+  margin-top: 4px;
+
+  font-size: 14px;
+}
+
+.admin-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.dashboard-card {
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+}
+
+.dashboard-card span {
+  color: #777;
+
+  font-size: 13px;
+}
+
+.dashboard-card strong {
+  margin:
+    12px
+    0
+    7px;
+
+  font-size: 30px;
+}
+
+.dashboard-card small {
+  color: #aaa;
+}
+
+.dashboard-card.destaque {
+  background: #b95072;
+  color: white;
+
+  border-color: #b95072;
+}
+
+.dashboard-card.destaque span,
+.dashboard-card.destaque small {
+  color: #f9dce6;
+}
+
+.admin-section {
+  margin-top: 35px;
+
+  padding: 28px;
+
+  background: white;
+
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+}
+
+.admin-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.admin-section-header h2 {
+  margin: 0;
+}
+
+.admin-section-header p {
+  margin:
+    6px
+    0
+    0;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+.admin-section-header button {
+  padding:
+    11px
+    18px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #b95072;
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.admin-table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  padding:
+    13px
+    10px;
+
+  text-align: left;
+
+  color: #999;
+
+  font-size: 11px;
+  text-transform: uppercase;
+
+  border-bottom:
+    1px solid #eeeeee;
+}
+
+.admin-table td {
+  padding:
+    17px
+    10px;
+
+  font-size: 14px;
+
+  border-bottom:
+    1px solid #f1f1f1;
+}
+
+.admin-status {
+  display: inline-block;
+
+  padding:
+    6px
+    10px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.admin-status.aberto {
+  background: #e7f7ee;
+  color: #177744;
+}
+
+.admin-status.encerrado {
+  background: #eeeeee;
+  color: #666;
+}
+
+.admin-status.cancelado {
+  background: #ffe7e7;
+  color: #a83333;
+}
+
+.admin-error {
+  margin-bottom: 20px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  background: #ffe8e8;
+  color: #a12b2b;
+}
+
+.admin-loading {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .admin-cards {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .admin-page {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    display: none;
+  }
+
+  .admin-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.acoes-leilao {
+  display: flex;
+  gap: 8px;
+}
+
+.acoes-leilao button {
+  padding: 7px 11px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.editar-button {
+  border: 1px solid #b95072;
+
+  background: white;
+  color: #b95072;
+}
+
+.editar-button:hover {
+  background: #fff0f5;
+}
+
+.excluir-button {
+  border: 1px solid #d66;
+
+  background: white;
+  color: #b33;
+}
+
+.excluir-button:hover {
+  background: #fff0f0;
+}

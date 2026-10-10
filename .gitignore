@@ -1,0 +1,33 @@
+# Java / Maven
+**/target/
+*.class
+*.jar
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Arquivos de autenticação usados nos testes
+cookies.txt
+admin-cookies.txt
+ana-cookies.txt
+
+# Saídas temporárias dos testes
+mari-concorrencia.txt
+ana-concorrencia.txt
+
+# Variáveis locais
+.env
+*.env.local
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

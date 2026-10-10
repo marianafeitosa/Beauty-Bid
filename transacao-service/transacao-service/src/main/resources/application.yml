@@ -1,0 +1,29 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: transacao-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27019/transacao_db?directConnection=true
+      auto-index-creation: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+    listener:
+      simple:
+        concurrency: 3
+        max-concurrency: 10
+        prefetch: 1
+
+vendas:
+  url: http://localhost:8082
+
+internal:
+  secret: chave-interna-leilao-123

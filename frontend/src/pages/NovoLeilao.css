@@ -1,0 +1,248 @@
+.novo-page {
+  min-height: 100vh;
+
+  background: #f8f8fa;
+
+  font-family: Arial, sans-serif;
+  color: #252525;
+}
+
+.novo-header {
+  height: 72px;
+
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+
+  border-bottom:
+    1px solid #eeeeee;
+}
+
+.novo-logo {
+  color: #b95072;
+
+  font-size: 21px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.novo-header button {
+  border: none;
+  background: transparent;
+
+  color: #666;
+
+  cursor: pointer;
+}
+
+.novo-container {
+  width: 90%;
+  max-width: 850px;
+
+  margin: 50px auto;
+}
+
+.novo-title span {
+  color: #b95072;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+}
+
+.novo-title h1 {
+  margin:
+    9px
+    0
+    7px;
+
+  font-size: 32px;
+}
+
+.novo-title p {
+  margin-top: 0;
+
+  color: #888;
+}
+
+.novo-form {
+  margin-top: 30px;
+
+  padding: 32px;
+
+  background: white;
+
+  border:
+    1px solid #eeeeee;
+
+  border-radius: 18px;
+}
+
+.novo-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 20px;
+}
+
+.novo-group {
+  margin-bottom: 22px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.novo-group label {
+  margin-bottom: 8px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.novo-group input,
+.novo-group textarea {
+  padding: 13px;
+
+  border:
+    1px solid #dddddd;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.novo-group input:focus,
+.novo-group textarea:focus {
+  border-color: #b95072;
+}
+
+.novo-money {
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  border:
+    1px solid #dddddd;
+
+  border-radius: 9px;
+}
+
+.novo-money span {
+  padding-left: 13px;
+
+  color: #777;
+}
+
+.novo-money input {
+  width: 100%;
+
+  border: none;
+}
+
+.novo-preview {
+  margin-bottom: 22px;
+
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  background: #fafafa;
+
+  border-radius: 12px;
+}
+
+.novo-preview span {
+  color: #777;
+
+  font-size: 12px;
+}
+
+.novo-preview img {
+  width: 180px;
+  height: 130px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.novo-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  padding-top: 20px;
+
+  border-top:
+    1px solid #eeeeee;
+}
+
+.novo-actions button {
+  padding:
+    12px
+    22px;
+
+  border-radius: 9px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.novo-actions .cancelar {
+  border:
+    1px solid #dddddd;
+
+  background: white;
+
+  color: #555;
+}
+
+.novo-actions .salvar {
+  border: none;
+
+  background: #b95072;
+  color: white;
+}
+
+.novo-actions .salvar:disabled {
+  opacity: 0.6;
+}
+
+.novo-error {
+  margin-bottom: 20px;
+
+  padding: 13px;
+
+  border-radius: 9px;
+
+  background: #ffe8e8;
+  color: #a12b2b;
+}
+
+@media (max-width: 700px) {
+  .novo-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .novo-form {
+    padding: 22px;
+  }
+}

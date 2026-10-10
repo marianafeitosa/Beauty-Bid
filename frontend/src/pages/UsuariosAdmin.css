@@ -1,0 +1,360 @@
+.usuarios-page {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 240px 1fr;
+
+  background: #f8f8fa;
+
+  font-family: Arial, sans-serif;
+  color: #252525;
+}
+
+.usuarios-sidebar {
+  min-height: 100vh;
+
+  padding: 28px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: white;
+
+  border-right:
+    1px solid #eeeeee;
+}
+
+.usuarios-logo {
+  margin-bottom: 8px;
+
+  color: #b95072;
+
+  font-size: 21px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.usuarios-label {
+  color: #aaaaaa;
+
+  font-size: 10px;
+  letter-spacing: 1.4px;
+}
+
+.usuarios-menu {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.usuarios-menu button,
+.usuarios-sair {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: transparent;
+
+  text-align: left;
+
+  color: #555;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.usuarios-menu button:hover,
+.usuarios-menu button.ativo {
+  background: #fff0f5;
+  color: #b95072;
+}
+
+.usuarios-sair {
+  color: #a43a3a;
+}
+
+.usuarios-content {
+  padding: 45px 5%;
+}
+
+.usuarios-header {
+  margin-bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.usuarios-header h1 {
+  margin: 0;
+
+  font-size: 30px;
+}
+
+.usuarios-header p {
+  margin-top: 7px;
+
+  color: #888;
+}
+
+.usuarios-total {
+  min-width: 95px;
+
+  padding: 15px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  background: white;
+
+  border:
+    1px solid #eeeeee;
+
+  border-radius: 12px;
+}
+
+.usuarios-total span {
+  color: #999;
+
+  font-size: 11px;
+}
+
+.usuarios-total strong {
+  margin-top: 4px;
+
+  color: #b95072;
+
+  font-size: 25px;
+}
+
+.usuarios-card {
+  padding: 28px;
+
+  background: white;
+
+  border:
+    1px solid #eeeeee;
+
+  border-radius: 16px;
+}
+
+.usuarios-card-header {
+  margin-bottom: 25px;
+}
+
+.usuarios-card-header h2 {
+  margin: 0;
+}
+
+.usuarios-card-header p {
+  margin:
+    6px
+    0
+    0;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+.usuarios-table-wrapper {
+  overflow-x: auto;
+}
+
+.usuarios-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.usuarios-table th {
+  padding:
+    13px
+    10px;
+
+  text-align: left;
+
+  color: #999;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  border-bottom:
+    1px solid #eeeeee;
+}
+
+.usuarios-table td {
+  padding:
+    17px
+    10px;
+
+  font-size: 14px;
+
+  border-bottom:
+    1px solid #f1f1f1;
+}
+
+.usuario-nome {
+  display: flex;
+  flex-direction: column;
+}
+
+.usuario-nome small {
+  margin-top: 3px;
+
+  color: #b95072;
+
+  font-size: 10px;
+}
+
+.usuario-role {
+  display: inline-block;
+
+  padding:
+    6px
+    11px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.usuario-role.cliente {
+  color: #346a9a;
+  background: #eaf4ff;
+}
+
+.usuario-role.adm {
+  color: #9c4763;
+  background: #fff0f5;
+}
+
+.usuario-input {
+  width: 100%;
+  max-width: 260px;
+
+  padding: 9px 10px;
+
+  border:
+    1px solid #dddddd;
+
+  border-radius: 7px;
+
+  outline: none;
+}
+
+.usuario-input:focus {
+  border-color: #b95072;
+}
+
+.usuario-acoes {
+  display: flex;
+
+  gap: 8px;
+}
+
+.usuario-acoes button {
+  padding:
+    7px
+    11px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.editar-usuario {
+  border:
+    1px solid #b95072;
+
+  background: white;
+  color: #b95072;
+}
+
+.excluir-usuario {
+  border:
+    1px solid #d66;
+
+  background: white;
+  color: #b33;
+}
+
+.excluir-usuario:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+.salvar-usuario {
+  border: none;
+
+  background: #b95072;
+  color: white;
+}
+
+.cancelar-usuario {
+  border:
+    1px solid #dddddd;
+
+  background: white;
+  color: #555;
+}
+
+.usuarios-error,
+.usuarios-success {
+  margin-bottom: 20px;
+
+  padding: 14px;
+
+  border-radius: 9px;
+}
+
+.usuarios-error {
+  color: #a12b2b;
+  background: #ffe8e8;
+}
+
+.usuarios-success {
+  color: #246a45;
+  background: #e7f7ee;
+}
+
+.usuarios-loading {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 750px) {
+  .usuarios-page {
+    grid-template-columns: 1fr;
+  }
+
+  .usuarios-sidebar {
+    display: none;
+  }
+
+  .usuarios-content {
+    padding: 25px 5%;
+  }
+}

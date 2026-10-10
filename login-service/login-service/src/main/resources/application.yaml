@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: login-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/login_db
+      auto-index-creation: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+jwt:
+  secret: minha-chave-super-secreta-do-leilao-com-mais-de-32-caracteres
